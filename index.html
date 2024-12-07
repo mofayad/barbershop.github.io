@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Edge Barbershop</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Urban Edge Barbershop</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="bookingForm" class="booking-form">
+            <h2>Book Your Appointment</h2>
+
+            <div class="form-section">
+                <h3>Select Service</h3>
+                <div id="services" class="services">
+                    <div class="service" data-service="Classic Haircut" data-price="30">
+                        <h4>Classic Haircut</h4>
+                        <p>$30 - Traditional men's haircut</p>
+                    </div>
+                    <div class="service" data-service="Fade Haircut" data-price="35">
+                        <h4>Fade Haircut</h4>
+                        <p>$35 - Modern precision fade</p>
+                    </div>
+                    <div class="service" data-service="Beard Trim" data-price="20">
+                        <h4>Beard Trim</h4>
+                        <p>$20 - Professional beard shaping</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Select Date</h3>
+                <input type="date" id="appointmentDate" required>
+            </div>
+
+            <div class="form-section">
+                <h3>Select Time</h3>
+                <div id="timeSlots" class="time-slots"></div>
+            </div>
+
+            <div class="form-section">
+                <h3>Your Details</h3>
+                <input type="text" id="customerName" placeholder="Full Name" required>
+                <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+            </div>
+
+            <button id="bookAppointment">Book Appointment</button>
+        </div>
+
+        <div id="confirmationMessage">
+            <h2>Appointment Confirmed!</h2>
+            <p id="confirmationDetails"></p>
+            <button id="newAppointment">Book Another Appointment</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Urban Edge Barbershop</p>
+        <p>123 Style Street, Cityville | (555) 123-4567</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
